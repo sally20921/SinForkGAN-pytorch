@@ -13,6 +13,9 @@ Sorry if the code is messy and unorganized. It will be reorganized very soon :)
 - [Project Page](https://sites.google.com/snu.ac.kr/sinforkgan/overview)
 - [Paper](https://sites.google.com/snu.ac.kr/sinforkgan/overview)(will be available soon)
 
+## Dependency 
+We use python3 (3.6), and python2 is not supported. 
+
 ## Table of contents 
 1. [Overview](#1)
 3. [Dataset](#2)
@@ -80,9 +83,12 @@ Place the data folder at `$REPO_NAME/datasets'
 Please place the data folder like the following structure.
 We change and modify the structure of each dataset using only nighttime/rainy images.
 For example, for RaidaR dataset, we only use `0.Rainy` dataset for testing and do away with the folder `1.Sunny`.
+
+- How it looks when you download each dataset
 ```
 code/
-  main.py
+  translation/
+    train.py
   ...
 datasets/
   bdd100k/
@@ -119,6 +125,38 @@ datasets/
    ...
 ```
 
+- How you should change it 
+```
+code/
+  translation/
+    train.py
+datasets/
+  bdd100k/
+    train/
+      0a1z0c5d-8098f13f.jpg
+      ...
+    val/
+    test/
+  dark-zurich/
+    train/
+      GOPRO0356_000488_rgb_anon.png
+      ...
+    val/
+    test/
+  ex-dark/
+   train/
+     2015_06850.jpg
+     ...
+    val/
+    test/
+  raidar/
+    train/
+      00001593.jpg
+      ...
+    val/
+    test/
+```
+ 
 (More information will be provided soon)
 
 <a name="6"></a>
