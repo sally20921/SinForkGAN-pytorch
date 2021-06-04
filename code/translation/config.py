@@ -1,8 +1,8 @@
 config = {
-    'image_path': '../../test', #'../../datasets/bdd100k'
-    'ckpt_path': '../../ckpt',
+    'image_path': 'samples', #'datasets/bdd100k' # expects .png
+    'ckpt_path': 'ckpt',
     'ckpt_name': None,
-    'batch_sizes': (16, 24, 3),
+    'batch_sizes': (16, 24, 1),
     'max_epochs': 20,
     'num_workers': 40,
     'learning_rate': 1e-4,
@@ -14,7 +14,7 @@ config = {
 }
 
 debug_options = {
-        'image_path': '../../test',
+        'image_path': '../../samples/test',
 }
 
 log_keys = [

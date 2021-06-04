@@ -164,27 +164,27 @@ datasets/
 
 ### Training 
 ```
-cd code/SinForkGAN 
-python3 main.py --phase train --dataset_dir ../../data/bdd100k/train/raw_images
+cd code/translation 
+python3 cli.py train
 ```
 
 ### Evaluation
 
 All the pretrained weights are planned to be provided.
-If you don't have the pretrained weights provided or trained in the `./code/SinForkGAN/ckpt` directory,
+If you don't have the pretrained weights provided or trained in the `./ckpt` directory,
 please download them [here](https://sally20921.github.io/weights/README.md)
 
 ```
-cd code/SinForkGAN
-python3 main.py --phase test --dataset_dir ../../data/dark-zurich/val --checkpoint_dir ./ckpt/bdd100k.pth
+cd code/translatino
+python3 cli.py evaluate --ckpt_name=$CKPT_NAME
 ```
 
 ### Demo 
 
 For simple image translation demo, run
 ```
-cd code/SinForkGAN
-python3 main.py --phase test --dataset_dir ../../data/ex-dark/People --checkpoint_dir ./ckpt/bdd100k.pth
+cd code/translation
+python3 cli.py infer --ckpt_name=$CKPT_NAME
 ```
 
 You can view the translated file in the terminal using `imgcat` in `./test` directory.
