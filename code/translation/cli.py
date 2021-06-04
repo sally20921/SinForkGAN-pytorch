@@ -60,6 +60,7 @@ def resolve_paths(config):
     root = Path('../../').resolve()
     for path in paths:
         res[path] = root / config[path]
+        print(res[path])
 
     return res
 

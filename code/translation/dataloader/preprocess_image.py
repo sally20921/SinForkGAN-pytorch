@@ -5,16 +5,18 @@ from collections import defaultdict
 import PIL
 from PIL import Image
 from tqdm import tqdm 
+from pathlib import Path
 
 import torch
 from torch import nn, utils
 from torchvision import models, datasets, transforms
 from utils import *
 
-def preprocess_images(args):
+def preprocess_images(args, pth):
     print('Preprocessing Images')
 
-    image_path = args.image_path
+    image_path = Path(pth)
+    print(image_path)
     res = []
     image_lists = sorted(list(image_path.glob('*')))
     for image in image_lists:
@@ -23,7 +25,6 @@ def preprocess_images(args):
         real = torch.from_numpy(real).float()
         real = real.permute(2, 0, 1) # expects .png
         res.append(real)
-
     return res
 
 
