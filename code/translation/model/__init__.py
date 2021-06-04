@@ -7,10 +7,13 @@ model_dict = {}
 
 def add_models():
     path = Path(os.path.dirname(__file__))
+    print(path)
 
     for p in path.glob('*.py'):
         name  = p.stem
+        print("name: ", name)
         parent = p.parent.stem
+        print("parent: ", parent)
         if name != "__init__":
             __import__("{}.{}".format(parent, name))
             module = eval(name)
@@ -20,9 +23,9 @@ def add_models():
                 if hasattr(member, "__bases__") and nn.Module in member.__bases__:
                             model_dict[underscore(str(member.__name__))] = member
 
-def get_models(args):
-    model  = model_dict[args.model_name]
-    model = model.resolve_args(args)
+def get_models(args, model_name):
+    model  = model_dict[model_name]
+    #model = model.resolve_args(args)
     return model.to(args.device)
 
 add_models()

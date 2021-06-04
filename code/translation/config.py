@@ -15,7 +15,8 @@ config = {
     'metrics': [],
     'log_cmd': True,
     'shuffle': (True, True, True),
-    'model_name': 'sfg'
+    'model_name': 'sfg'.
+    'loss_name': 'cross_entropy',
 }
 
 debug_options = {
