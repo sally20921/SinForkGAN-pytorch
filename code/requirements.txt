@@ -10,10 +10,10 @@ ipdb
 ipython
 ipython-genutils
 jedi
+matplotlib
 msgpack
 munch
 neovim
-nltk
 numpy
 parso
 pexpect
@@ -57,8 +57,10 @@ pytest-flake8
 flake8
 flake8-black
 check-manifest
+urllib3
 twine
 isort
 pre-commit
 mypy
 yapf
+scikit-image
