@@ -55,7 +55,6 @@ SinForkGAN model effectively learns and tests nighttime rainy images and transla
 
 It also differs from single image dehazing/denoising methods in that it is trained and tested on real-world dataset. Unsupervised single image dehazing/denoising methods tend to fail under real-world circumstances where noises are different from synthetic dataset, and our problem setting (e.g. rainy night) is a much more challenging setting than just simple image denoising. 
 
-We improve upon SinForkGAN 
 ![figure2](https://user-images.githubusercontent.com/38284936/120337731-890a5600-c32e-11eb-8a48-d105970db88b.jpg)
 
 <a name="4"></a>
