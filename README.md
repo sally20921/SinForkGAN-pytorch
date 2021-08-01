@@ -3,8 +3,9 @@
 
 By Seri Lee, Department of Engineering, Seoul National University
 
-This repository contains the code for train and test SinForkGAN model.
+This repository contains the code for training and testing the SinForkGAN model.
 This project was conducted as a final project for the course "Topics in Artificial Intelligence: Advanced GANs" in Seoul National University.
+The paper was submitted for 2021 ACML. 
 For more information about the course, please refer to our [instructor](https://github.com/yunjey)'s github page.
 
 Full running code will be provided after acceptance.
