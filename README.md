@@ -8,9 +8,6 @@ This project was conducted as a final project for the course "Topics in Artifici
 The paper was submitted for 2021 ACML. 
 For more information about the course, please refer to our [instructor](https://github.com/yunjey)'s github page.
 
-Full running code will be provided after acceptance.
-Sorry if the code is messy and unorganized. It will be reorganized very soon :)
-
 - [Project Page](https://sites.google.com/snu.ac.kr/sinforkgan/overview)
 - [Paper](https://sally20921.github.io/doc/sinforkgan.pdf)
 
