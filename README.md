@@ -11,7 +11,7 @@ Full running code will be provided after acceptance.
 Sorry if the code is messy and unorganized. It will be reorganized very soon :)
 
 - [Project Page](https://sites.google.com/snu.ac.kr/sinforkgan/overview)
-- [Paper](https://sites.google.com/snu.ac.kr/sinforkgan/overview)(will be available soon)
+- [Paper](https://sally20921.github.io/doc/sinforkgan.pdf)
 
 ## Dependency 
 We use python3 (3.6), and python2 is not supported. 
